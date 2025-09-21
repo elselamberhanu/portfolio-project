@@ -19,7 +19,39 @@
         </nav>
     </header>
     <main>
+        <h2>Reach out if you have any feedback</h2>
+        <form action="https://formspree.io/f/mgebjvdp" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"  placeholder="enter your full name" required><br><br>
 
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" placeholder="enter your email" required><br><br>
+            <label for="gender">Gender:</label><br>
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male">Male
+            </label><br>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female">Female
+            </label><br><br>
+            <label for="collab">Would you like to collaborate?</label><br>
+            <label for="collab">
+                <input type="checkbox" name="collab" value="no"> No
+                <input type="checkbox" name="collab" value="yes"> Yes
+            </label>
+            <br><br>
+            <label for="skills">Your skill areas:</label><br>
+            <label for="skills">
+                <input type="checkbox" name="skills" value="web development"> Web Development
+                <input type="checkbox" name="skills" value="mobile development"> Mobile Development
+                <input type="checkbox" name="skills" value="game development"> Game Development
+                <input type="checkbox" name="skills" value="data science"> Data Science
+                <input type="checkbox" name="skills" value="ai and machine learning"> AI and Machine Learning
+            </label><br><br>
+            <label for="rating">Rate my webpage (1 to 10):</label><br>
+            <input type="range" id="rating" name="rating" min="1" max="10" value="5"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
     </main>
     <footer>
         <P>© 2023 Elselam Berhanu. All rights reserved.</P>
